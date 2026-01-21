@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!DOCTYPE html><html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Doce Encanto Confeitaria em Cuiabá | Bolos de Aniversário Decorados</title>
   <meta name="description" content="Doce Encanto Confeitaria em Cuiabá - Bolos de aniversário personalizados, bolos decorados para festas e celebrações especiais. Confeitaria artesanal em Cuiabá MT." />
-  
+  <link rel="canonical" href="https://ederamorimth.github.io/Confeitaria-doce-encanto-/" />
   <style>
     :root {
       --rosa: #e9b7c8;
@@ -13,193 +12,149 @@
       --marrom: #5a3e36;
       --dourado: #c9a24d;
       --texto: #3a2b27;
-    }
+    }* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+body {
+  background-color: var(--bege);
+  color: var(--texto);
+  line-height: 1.6;
+}
 
-    html {
-      font-size: 100%; /* 16px base */
-    }
+header {
+  background-color: #ffffff;
+  padding: 40px 20px;
+  text-align: center;
+  border-bottom: 3px solid var(--dourado);
+}
 
-    body {
-      background-color: var(--bege);
-      color: var(--texto);
-      line-height: 1.6;
-      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-    }
+header img {
+  max-width: 220px;
+  margin-bottom: 20px;
+}
 
-    header {
-      background-color: #ffffff;
-      padding: 2rem 1rem;
-      text-align: center;
-      border-bottom: 3px solid var(--dourado);
-    }
+header h1 {
+  font-size: 2rem;
+  color: var(--marrom);
+  margin-bottom: 10px;
+}
 
-    header img {
-      max-width: 180px;
-      height: auto;
-      margin-bottom: 1.2rem;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
+header p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
 
-    header h1 {
-      font-size: clamp(1.6rem, 6vw, 2.1rem);
-      color: var(--marrom);
-      margin-bottom: 0.6rem;
-    }
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
 
-    header p {
-      font-size: clamp(1rem, 4vw, 1.1rem);
-      max-width: 90%;
-      margin: 0 auto;
-    }
+section h2 {
+  font-size: 1.8rem;
+  color: var(--marrom);
+  margin-bottom: 20px;
+  border-left: 5px solid var(--dourado);
+  padding-left: 15px;
+}
 
-    section {
-      padding: 3rem 1rem;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
+section p {
+  font-size: 1.05rem;
+  margin-bottom: 20px;
+}
 
-    section h2 {
-      font-size: clamp(1.5rem, 5.5vw, 1.9rem);
-      color: var(--marrom);
-      margin-bottom: 1.2rem;
-      border-left: 5px solid var(--dourado);
-      padding-left: 0.9rem;
-    }
+.valores {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
 
-    section p {
-      font-size: clamp(1rem, 3.8vw, 1.08rem);
-      margin-bottom: 1.3rem;
-    }
+.valor-box {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  border-top: 4px solid var(--dourado);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
 
-    .valores {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1.8rem;
-      margin-top: 2rem;
-    }
+.valor-box h3 {
+  margin-bottom: 10px;
+  color: var(--marrom);
+}
 
-    .valor-box {
-      background: #ffffff;
-      padding: 1.8rem;
-      border-radius: 12px;
-      border-top: 4px solid var(--dourado);
-      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
-    }
+footer {
+  background-color: #ffffff;
+  padding: 30px 20px;
+  text-align: center;
+  border-top: 3px solid var(--dourado);
+}
 
-    .valor-box h3 {
-      margin-bottom: 0.8rem;
-      color: var(--marrom);
-      font-size: 1.25rem;
-    }
+footer p {
+  font-size: 0.95rem;
+}
 
-    .cta {
-      text-align: center;
-      padding: 2.5rem 1rem;
-      background: linear-gradient(to bottom, #fff8f2, var(--bege));
-    }
+.cta {
+  margin-top: 40px;
+  text-align: center;
+}
 
-    .cta h2 {
-      font-size: clamp(1.5rem, 5.5vw, 1.9rem);
-      margin-bottom: 1rem;
-      color: var(--marrom);
-    }
+.cta a {
+  text-decoration: none;
+  background-color: var(--dourado);
+  color: #ffffff;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: 0.3s;
+}
 
-    .cta p {
-      margin-bottom: 1.5rem;
-      font-size: 1.1rem;
-    }
+.cta a:hover {
+  background-color: #b18a3c;
+}
 
-    .cta a {
-      display: inline-block;
-      text-decoration: none;
-      background-color: var(--dourado);
-      color: white;
-      padding: 1rem 2.2rem;
-      border-radius: 50px;
-      font-size: 1.1rem;
-      font-weight: 600;
-      min-width: 240px;
-      transition: all 0.25s ease;
-      box-shadow: 0 4px 12px rgba(201,162,77,0.3);
-    }
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
 
-    .cta a:hover,
-    .cta a:focus {
-      background-color: #b18a3c;
-      transform: translateY(-2px);
-      box-shadow: 0 6px 16px rgba(201,162,77,0.4);
-    }
+  section h2 {
+    font-size: 1.5rem;
+  }
+}
 
-    footer {
-      background-color: #ffffff;
-      padding: 2rem 1rem;
-      text-align: center;
-      border-top: 3px solid var(--dourado);
-      font-size: 0.95rem;
-    }
-
-    footer a {
-      color: var(--dourado);
-      font-weight: 600;
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
-
-    /* ───────────────────────────────────────
-       TABLET e DESKTOP – progressive enhancement
-    ─────────────────────────────────────── */
-    @media (min-width: 600px) {
-      header {
-        padding: 3.5rem 1.5rem;
-      }
-      header img {
-        max-width: 220px;
-      }
-      .valores {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      }
-      section {
-        padding: 4rem 1.5rem;
-      }
-    }
-
-    @media (min-width: 900px) {
-      header {
-        padding: 4.5rem 2rem;
-      }
-      header img {
-        max-width: 260px;
-      }
-      section {
-        padding: 5rem 2rem;
-      }
-      .cta a {
-        padding: 1.2rem 3rem;
-        font-size: 1.15rem;
-      }
-    }
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Bakery",
+    "name": "Doce Encanto Confeitaria",
+    "url": "https://ederamorimth.github.io/Confeitaria-doce-encanto-/",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Cuiabá",
+      "addressRegion": "MT",
+      "addressCountry": "BR"
+    },
+    "sameAs": [
+      "https://www.instagram.com/doceencantoconfeitariacba"
+    ],
+    "description": "Confeitaria artesanal em Cuiabá especializada em bolos de aniversário personalizados e decorados."
+  }
+  </script>
 </head>
-<body>
-
-  <header>
-    <img src="logo.png" alt="Doce Encanto Confeitaria em Cuiabá - Bolos de Aniversário Decorados" loading="lazy" />
+<body>  <header>
+    <!-- Substitua o caminho abaixo pela sua logo -->
+    <img src="logo.png" alt="Doce Encanto Confeitaria em Cuiabá - Bolos de Aniversário" />
     <h1>Doce Encanto Confeitaria em Cuiabá</h1>
     <p>Confeitaria especializada em bolos de aniversário decorados, feitos sob encomenda para festas e momentos especiais em Cuiabá – MT.</p>
-  </header>
-
-  <section>
+  </header>  <section>
     <h2>Confeitaria de Bolos de Aniversário em Cuiabá</h2>
     <p>
       A <strong>Doce Encanto Confeitaria</strong> é uma confeitaria em Cuiabá especializada na criação de <strong>bolos de aniversário personalizados</strong> e bolos decorados para festas. Cada projeto é desenvolvido com atenção aos detalhes, respeitando o estilo, o tema e o momento de cada celebração.
@@ -207,9 +162,7 @@
     <p>
       Nosso propósito é levar <strong>alegria em forma de bolo</strong>, transformando aniversários em lembranças marcantes. Trabalhamos com dedicação, cuidado artesanal e um atendimento próximo, valorizando cada cliente em Cuiabá e região.
     </p>
-  </section>
-
-  <section>
+  </section>  <section>
     <h2>Nossos Valores</h2>
     <div class="valores">
       <div class="valor-box">
@@ -225,24 +178,16 @@
         <p>Nosso objetivo é levar felicidade, encanto e boas memórias em cada comemoração.</p>
       </div>
     </div>
-  </section>
-
-  <section class="cta">
+  </section>  <section class="cta">
     <h2>Vamos celebrar juntos?</h2>
     <p>Atendemos sob encomenda em Cuiabá – MT.</p>
-    <a href="https://wa.me/55SEUNUMERO?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20bolos%20de%20aniversário" target="_blank" rel="noopener">
-      Fale comigo pelo WhatsApp
-    </a>
-  </section>
-
-  <footer>
+    <a href="https://wa.me/5565SEUNUMERO" target="_blank">Entre em contato pelo WhatsApp</a>
+  </section>  <footer>
     <p>© 2026 Doce Encanto Confeitaria • Bolos de Aniversário em Cuiabá – MT</p>
     <p>
-      <a href="https://www.instagram.com/doceencantoconfeitariacba" target="_blank" rel="noopener">
+      <a href="https://www.instagram.com/doceencantoconfeitariacba" target="_blank" style="text-decoration:none;color:#c9a24d;font-weight:600;">
         📷 Instagram: @doceencantoconfeitariacba
       </a>
     </p>
-  </footer>
-
-</body>
+  </footer></body>
 </html>
